@@ -1,0 +1,133 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+#bg {
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+  font-family: 'Share Tech', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: black;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  position:relative;
+  display:flex;
+  align-items:center;
+  font-family:'Share Tech Mono', monospace;
+  line-height: 1em;
+  word-spacing:-.1em;
+  letter-spacing:-.05em;
+  transition:.2s all ease;
+  margin-left:10px;
+  margin-bottom:15px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+  color: white;
+}
+
+section {
+  grid-column: 2 / 8;
+  background: var(--dark-bg);
+  font-size: 1rem;
+  margin-bottom: var(--spacing);
+  box-shadow: 0 8px 6px -6px grey;
+  position: relative;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid;
+  padding: 13px;
+  line-height: 1.5em;
+}
+
+section::before, section::after {
+  content: "";
+  background: var(--dark-bg);
+  border-radius: 50px;
+  position: absolute;
+  background: #044389;
+}
+
+section::before {
+  width: 60px; height: 60px;
+  top: -30px; left: 40px;
+}
+
+section::after {
+  width: 100px; height: 100px;
+  bottom: -50px; right: 40px;
+}
+
+blockquote {
+  position: relative;
+  background: white;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+blockquote p {
+  color: black;
+  font-size: 3rem; /* Reduced from 4rem to make it smaller */
+  line-height: 1.2; /* Adjust line height for better readability */
+}
+
+blockquote::before,
+blockquote::after {
+  content: '';
+  position: absolute;
+  background: #044389;
+  border-radius: 50%;
+}
+
+blockquote::before {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 50px;
+}
+
+blockquote::after {
+  width: 120px;
+  height: 120px;
+  top: -60px;
+  right: 50px;
+}
+
+.left {
+  grid-column: 6 / 12;
+}
